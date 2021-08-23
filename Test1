@@ -1,0 +1,13 @@
+void main() {
+  int price = 1000000; //ราคารถยนต์
+  int interest = 8; //เปอร์เซนดอกเบี้ยต่อปี
+  int year = 6; //จำนวนปีที่ผ่อนชำระ
+  double calculateinterest = price * interest / 100;
+
+  print("ราคารถยนต์: $price บาท");
+  print("ดอกเบี้ย $interest % ต่อปี");
+  print("จำนวนดอกเบี้ยต่อปี: $calculateinterest บาท");
+  print("---- ระยะเวลาผ่อนทั้งหมด $year ปี ----");
+  print(
+      "ราคารถยนต์รวมดอกเบี้ยทั้งหมด: ${price + calculateinterest * year}  บาท");
+}
